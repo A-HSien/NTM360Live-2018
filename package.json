@@ -1,0 +1,14 @@
+{
+    "name": "NTM360Live-2018",
+    "version": "0.0.1",
+    "description": "",
+    "author": "",
+    "devDependencies": {
+        "@videojs/http-streaming": "1.5.0",
+        "live-server": "1.2.0"
+    },
+    "main": "index",
+    "scripts": {
+        "server": "live-server ./"
+    }
+}
