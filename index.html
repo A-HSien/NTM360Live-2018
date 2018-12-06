@@ -14,20 +14,34 @@
 <body>
     <div id="head">
         <div>
-            <span class="icon"></span>
-            <span>fakename</span>
+            <span class="icon background-image"></span>
+            <span id="name">xxxx</span>
         </div>
         <div>
             <span class="live">LIVE</span>
-            <span class="count"></span>
+            <span class="count background-image"></span>
             <span class="number">xxxxx</span>
         </div>
     </div>
     <div id="content">
-        <div class="title border">computer vision</div>
-        <video-js id="player" class="vjs-default-skin vjs-big-play-centered border" controls>
-            <source type="application/x-mpegURL">
-        </video-js>
+        <div>
+            <div class="title border">computer vision</div>
+        </div>
+        <div class="border play-wrapper">
+            <div id="mask" class="blur"></div>
+            <video-js id="player" class="vjs-default-skin vjs-big-play-centered" controls>
+                <source type="application/x-mpegURL">
+            </video-js>
+        </div>
+        <div class="data-section">
+            <div class="title border">data transfer</div>
+        </div>
+        <div id="data-wrapper" class="border data-section">
+            <div id="data-content"></div>
+        </div>
+    </div>
+    <div class="port-wrapper">
+        <div id="port" class="background-image shining"></div>
     </div>
     <script src="https://vjs.zencdn.net/7.3.0/video.js"></script>
     <script src="app.js"></script>
